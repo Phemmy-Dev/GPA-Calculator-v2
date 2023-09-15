@@ -19,21 +19,23 @@ body {
 
 }
 
-#toggle-mode {
-    float: right;
-    margin: 20px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #container {
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 20px 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
 }
 
 table {
-    width: 70%;
+    width: 80%;
     border-collapse: collapse;
     margin-bottom: 15px;
 }
@@ -104,4 +106,27 @@ button {
 h4 {
     text-align: center;
     padding: 40px 0 0px 0;
+}
+
+@media (max-width: 768px) {
+    .button {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    
+    button {
+        font-weight: bold;
+        color: white;
+        border-radius: 15px;
+        padding: 6px 10px;
+        background: none;
+        outline: none;
+        border: none;
+        background: green;
+    } 
+
+    .button button {
+        font-size: 9px;
+    }
 }
