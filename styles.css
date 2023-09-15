@@ -65,6 +65,7 @@ input[type="text"], input[type="number"], select {
 .gpa-score {
     text-align: center;
     font-size: 30px;
+    padding: 30px 0;
 }
 
 .button {
@@ -129,4 +130,11 @@ h4 {
     .button button {
         font-size: 9px;
     }
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
