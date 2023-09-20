@@ -20,7 +20,7 @@ body {
 #container {
     max-width: 550px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -123,6 +123,11 @@ h4 {
     .button button {
         font-size: 9px;
     }
+
+    .action-btns button {
+        padding: 8px 16px;
+
+    }
 }
 
 .branding {
@@ -135,5 +140,5 @@ h4 {
 .action-btns{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
