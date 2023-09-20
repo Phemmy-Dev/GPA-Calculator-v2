@@ -1,20 +1,13 @@
 
-
-/* Light Mode */
-:root {
-    --background-color: #f9f9f9;
-    --text-color: #333;
-}
-
 /* Dark Mode */
 .dark-mode {
-    --background-color: #333;
-    --text-color: #fff;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: #333;
+    color: #fff;
     font-family: Arial, sans-serif;
 
 }

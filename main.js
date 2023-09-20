@@ -154,18 +154,25 @@ downloadScreenshotButton.addEventListener("click", () => {
   });
 });
 
-// Toggle button when the button is clicked
+
+// Toggle mode when the button is clicked
 toggleModeButton.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
+  body.classList.toggle("dark-mode"); // Toggle light mode class
+  const isLightMode = body.classList.contains("light-mode");
 
   // Store the user's preference in localStorage
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("mode", "dark");
-    toggleModeButton.textContent = "Light Mode"; // Switch to Light mode
-  } else {
+  if (isLightMode) {
     localStorage.setItem("mode", "light");
-    toggleModeButton.textContent = "Dark Mode"; // Switch to Dark mode
+    toggleModeButton.textContent = "Dark Mode"; // Switch to Light mode
+  } else {
+    localStorage.setItem("mode", "dark");
+    toggleModeButton.textContent = "Light Mode"; // Switch to Dark mode
   }
 });
+
+// Immediately set dark mode on page load
+body.classList.add("light-mode"); // Add light mode class
+toggleModeButton.textContent = "Light Mode"; // Set initial button text
+
 
 
