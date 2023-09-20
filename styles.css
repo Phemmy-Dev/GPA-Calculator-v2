@@ -138,3 +138,9 @@ h4 {
     text-align: center;
     justify-content: center;
 }
+
+.action-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
