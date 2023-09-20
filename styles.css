@@ -113,7 +113,7 @@ h4 {
         font-weight: bold;
         color: white;
         border-radius: 15px;
-        padding: 6px 10px;
+        padding: 8px 16px;
         background: none;
         outline: none;
         border: none;
@@ -121,7 +121,7 @@ h4 {
     } 
 
     .button button {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .action-btns button {
