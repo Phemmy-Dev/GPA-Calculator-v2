@@ -22,7 +22,7 @@ This is a web-based GPA calculator that allows users to calculate their GPA for 
 
 ## Demo
 
-You can try the GPA Calculator here: [Demo Link](https://gpa-calculator1.netlify.app/)
+You can try the GPA Calculator here: [Demo](https://gpa-calculator1.netlify.app/)
 
 ## Screenshots
 
