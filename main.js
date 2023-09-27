@@ -97,6 +97,7 @@ function updateGradeTable() {
 function calculateGPA() {
   if (grades.length === 0) {
     totalGpa.textContent = "0.0";
+    gpaScoreSummary.textContent = ""; // Clear the previous message
     return;
   }
 
@@ -110,6 +111,20 @@ function calculateGPA() {
 
   const gpa = (totalPoints / totalUnits).toFixed(2);
   totalGpa.textContent = gpa;
+
+  if (gpa >= 4.50 && gpa <= 5.00) {
+    gpaScoreSummary.textContent = "Congratulations, You have a First Class🎉";
+  } else if (gpa >= 3.50 && gpa < 4.49) {
+    gpaScoreSummary.textContent = "You have a Second Class Upper";
+  } else if (gpa >= 2.40 && gpa < 3.49) {
+    gpaScoreSummary.textContent = "You have a Second Class Lower";
+  } else if (gpa >= 1.50 && gpa < 2.39) {
+    gpaScoreSummary.textContent = "You have a Third Class";
+  } else if (gpa >= 1.00 && gpa < 1.49) {
+    gpaScoreSummary.textContent = "You have a Pass";
+  } else {
+    gpaScoreSummary.textContent = ""; // Clear the message if GPA doesn't match any range
+  }
 
   // Saving the grades to localStorage
   localStorage.setItem("grades", JSON.stringify(grades));
