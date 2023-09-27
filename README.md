@@ -19,6 +19,7 @@ This is a web-based GPA calculator that allows users to calculate their GPA for 
 - Toggle between light mode and dark mode for a personalized experience.
 - Save and load calculation history from browser storage.
 - Clear history to start fresh.
+- Display a personalized message based on the calculated GPA.
 
 ## Demo
 
@@ -34,7 +35,8 @@ You can try the GPA Calculator here: [Demo](https://gpa-calculator1.netlify.app/
 2. Click the "Add Grade" button to add the course to the calculation.
 3. Repeat the above steps for each course.
 4. Your GPA will be displayed in the "Total GPA" section.
-5. Optionally, click the "Download Screenshot" button to save your GPA results as an image.
+5. A personalized message based on your GPA will appear under the "Total GPA" section.
+6. Optionally, click the "Download Screenshot" button to save your GPA results as an image.
 
 ## Clear History
 
